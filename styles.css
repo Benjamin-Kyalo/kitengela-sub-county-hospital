@@ -1,0 +1,112 @@
+/* GENERAL STYLES   */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Rubik+Doodle+Triangles&family=Russo+One&display=swap");
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(223, 47%, 23%);
+  --magic-color-yellow: linear-gradient(-45deg, white 30%, yellow 0%);
+  --magic-color-lightgreen: linear-gradient(-45deg, white 30%, lightgreen 0%);
+  --magic-color-lightblue: linear-gradient(-45deg, white 30%, lightblue 0%);
+  --magic-color-tomato: linear-gradient(-45deg, white 30%, tomato 0%);
+  --magic-color-purple: linear-gradient(-45deg, white 30%, purple 0%);
+}
+/* STYLING THE NAVIGATION BAR */
+.phone {
+  color: white;
+  gap: 2rem;
+}
+
+.menu-bar {
+  background: rgb(0, 100, 0);
+  text-align: center;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+  position: relative;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.active,
+.menu-bar ul li:hover {
+  background: #2bab0d;
+  border-radius: 3px;
+}
+.menu-bar .fa {
+  margin-right: 8px;
+}
+.sub-menu-1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgb(0, 100, 0);
+  padding: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+  display: block;
+}
+.sub-menu-1 ul {
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom: none;
+}
+/* The belo */
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color: #b2ff00;
+}
+
+/* STYLES BELOW NAVIGATION */
+.img-below-nav {
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  border: 20px;
+  background-size: cover;
+  background-position: center;
+}
