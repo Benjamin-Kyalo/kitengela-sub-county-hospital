@@ -173,9 +173,11 @@ html {
 .container-main{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .card{
-  background: #29E7CD;
+  /* background: #29E7CD; */
+  background: #97DB4F;
   width: 270px;
   /* height: 400px; */
   margin: 10px;
@@ -205,4 +207,33 @@ html {
   color: white;
   padding: 15px 20px;
   display: block;
+  text-align: center;
+  margin: 20px 50px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.card:hover{
+  /* background-color:  #b8dbd9; */
+  background-color:  #04724D;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 176, 155, 0.5),
+    rgba(150, 201, 61, 1)
+  );
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
 }
