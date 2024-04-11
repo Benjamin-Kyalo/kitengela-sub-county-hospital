@@ -1,4 +1,4 @@
-@media screen and(max-width:1200px) {
+/* @media screen and(max-width:1200px) {
   .box {
     width: 40%;
   }
@@ -7,16 +7,17 @@
   .box {
     width: 90%;
   }
-}
+} */
 
-@media screen and (max-width: 768px) {
-  .all-wrapper {
+@media screen and (max-width: 600px) {
+  .container-main{
     display: block;
+    /* justify-content: center; */
   }
-  .wrapper {
-    display: block;
-  }
-  .card {
+  /* .card {
     margin-bottom: 20px;
   }
-}
+  .all-wrapper {
+    display: block;
+  } */
+} 
