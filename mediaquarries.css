@@ -10,14 +10,8 @@
 } */
 
 @media screen and (max-width: 600px) {
-  .container-main{
-    display: block;
-    /* justify-content: center; */
+  .img-below-nav{
+    height: 50px;
+    width: 50px;
   }
-  /* .card {
-    margin-bottom: 20px;
-  }
-  .all-wrapper {
-    display: block;
-  } */
-} 
+}
