@@ -9,9 +9,54 @@
   }
 } */
 
+/* WHY US */
+
 @media screen and (max-width: 600px) {
-  .img-below-nav{
+  .img-below-nav {
     height: 50px;
     width: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* STYLING THE NAVIGATION BAR */
+  .side-bar{
+      display: flex; /* Display the side bar as a column on smaller screens */
+    }
+  
+  }
+  .menu-bar,
+  .side-bar {
+    font-size: 5x;
+    display: flex;
+    justify-content:space-evenly;
+  }
+  .menu-bar ul {
+    display: none;
+    list-style: none;
+    color: #fff;
+  }
+  .menu-bar ul li,
+  .side-bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+    display: none;
+  }
+  .menu-bar ul li a,
+  .side-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  /* WHY US SECTION */
+  .why-us {
+    place-items: left;
+  }
+  .row {
+    grid-template-columns: 1fr; /* Switch to a single column layout on smaller screens */
+  }
+
+  .row .right {
+    align-items: flex-start; /* Align content to the top */
   }
 }
