@@ -1,112 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trial</title>
-    <style>
-        /* STYLES BELOW INTRODUCTION */
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="trial.css">
+    
+    <nav id="desktop-nav">
+      <div class="logo">KSCH</div>
+      <div>
+        <ul class="nav-links">
+          <li class="active">
+            <a href="#"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li class="active">
+            <a href="#about"><i class="fa fa-user"></i>About</a>
+          </li>
+          <li class="active">
+            <a href="#contact"><i class="fa fa-phone"></i>Contact</a>
+          </li>
+          <li class="active">
+            <a href="#services"><i class="fa fa-clone"></i>Services</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">KSCH</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#services" onclick="toggleMenu()">services</a></li>
+          <!-- <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> -->
+        </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script> <!-- Make sure this is the correct path to your JavaScript file -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      menu.classList.toggle("open");
+    }
+  </script>
 
-/* .heading-2 {
-  text-align: center;
-} */
-/* STYLES BELOW INTRODUCTION */
-/* .heading-2 {
-  text-align: center;
-}
-.container-main{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.card{
-  background: #97DB4F;
-  width: 270px;
-  margin: 10px;
-  border-radius: 15px;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s ease-in-out;
-}
-.card-image{
-  height: 170px;
-  margin-bottom: 15px;
-  background-size: cover;
-  border-radius: 15px 15px 0 0;
-}
-.card-1{
-  background-image: url(assets/consultation.jpg);
-}
-.card-2{
-  background-image: url(assets/lab1.jpg);
-}
-.card-3{
-  background-image: url(assets/maternity1.jpg);
-}
-.card h2, .card p{
-  padding: 10px;
-}
-.btn{
-  background-color: black;
-  color: white;
-  padding: 15px 20px;
-  display: block;
-  text-align: center;
-  margin: 20px 50px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.card:hover{
-  background-color:  #04724D;
-  color: white;
-  cursor: pointer;
-  transform: scale(1.03);
-  transition: all 1s ease;
-}
-.card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 176, 155, 0.5),
-    rgba(150, 201, 61, 1)
-  );
-  z-index: 2;
-  transition: 0.5s all;
-  opacity: 0;
-} */
 
-    </style>
-</head>
-<body>
-    <!-- <section class="container-main">
-    <div class="card">
-      <div class="card-image card-1"></div>
-        <h2>Consultation</h2>
-        <p>In our consultation room, trust and understanding form the foundation of healing. We convey the essence of our practice as a safe haven, where patients find solace and doctors deliver compassionate care.</p>
-        <a href="#" class="btn">Read More</a>
-    </div>
-
-    <div class="card">
-      <div class="card-image card-2"></div>
-        <h2>Laboratory</h2>
-        <p>In our laboratory, trust and precision are the bedrock of scientific advancement. We epitomize a secure environment where researchers explore, innovate, and collaborate with unwavering dedication.</p>
-        <a href="#" class="btn">Read More</a>
-    </div>
-
-    <div class="card">
-      <div class="card-image card-3"></div>
-        <h2>Maternity</h2>
-        <p>In our maternity ward, trust and empathy are the pillars of care. We embody a nurturing environment where expectant mothers find comfort and support, while healthcare professionals deliver compassionate and expert guidance throughout the journey to parenthood.</p>
-        <a href="#" class="btn" >Read More</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-    </div>
-
-  </section> -->
-
-</body>
+<label for=""><input type="checkbox" name="" id=""></label>
+  </body>
 </html>
