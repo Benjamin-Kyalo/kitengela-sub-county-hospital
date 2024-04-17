@@ -1,0 +1,142 @@
+/* GENERAL STYLES   */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Rubik+Doodle+Triangles&family=Russo+One&display=swap");
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: white;
+  min-height: 100vh;
+  background: url(images/Hospital.jpg);
+  background-size: cover;
+}
+html {
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(223, 47%, 23%);
+  --magic-color-yellow: linear-gradient(-45deg, white 30%, yellow 0%);
+  --magic-color-lightgreen: linear-gradient(-45deg, white 30%, lightgreen 0%);
+  --magic-color-lightblue: linear-gradient(-45deg, white 30%, lightblue 0%);
+  --magic-color-tomato: linear-gradient(-45deg, white 30%, tomato 0%);
+  --magic-color-purple: linear-gradient(-45deg, white 30%, purple 0%);
+}
+/* STYLING THE NAVIGATION BAR */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  background: rgb(0, 100, 0);
+}
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+header .navbar ul {
+  list-style: none;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  display: block;
+}
+header .navbar ul li a:hover {
+  background: #90AA86;
+  /* color: #fff; */
+  color: black;
+}
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  /* background: #fff; */
+  background: #90AA86;
+  color: black;
+  display: none;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba((0), 0, 0, 0.1);
+}
+header .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+#menu-bar {
+  display: none;
+}
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #90AA86;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background: #90AA86;
+  }
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}
